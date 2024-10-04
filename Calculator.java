@@ -18,7 +18,7 @@ public class Calculator {
             if (password.equals(correctPassword)) {
                 System.out.println("Welcome!");
 
-                // The calculator logic should go here after successful login
+                
                 System.out.println("Enter num1: ");
                 double num1 = sc.nextDouble();
 
@@ -42,16 +42,16 @@ public class Calculator {
                     case '/':
                         if (num2 == 0) {
                             System.out.println("Error: Division by zero is not allowed.");
-                            return;  // Exit the program if division by zero
+                            return;  
                         }
                         result = num1 / num2;
                         break;
                     default:
                         System.out.println("Invalid operator.");
-                        return;  // Exit the program for invalid operator
+                        return;  
                 }
 
-                System.out.println("Result: " + result);  // Output the result
+                System.out.println("Result: " + result);  
 
             } else {
                 System.out.println("Wrong password");
